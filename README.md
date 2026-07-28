@@ -1,6 +1,6 @@
 # Dreaming Spanish Sync
 
-Automatically imports activities tracked with the **Simple Time Tracker** app (exported as a CSV file) and enters them to your **Dreaming Spanish** account using the "Add time outside the platform" feature.
+Automatically imports activities tracked with the **Simple Time Tracker** app (exported as a CSV file) and enters them into your **Dreaming Spanish** account using the "Add time outside the platform" feature.
 
 This tool was created to simplify tracking Spanish listening hours and avoid manually entering every activity into Dreaming Spanish.
 
@@ -21,21 +21,28 @@ This tool was created to simplify tracking Spanish listening hours and avoid man
 
 ## Requirements
 
-- Python 3.12+
+- Python 3.14+
+- [uv](https://docs.astral.sh/uv/) for dependency management
 - Google Chrome
 - A Dreaming Spanish account
 - Exported CSV data from Simple Time Tracker
 
 ## Installation
 
-Clone the repository:
+### Install uv
+
+If you don't have uv installed yet, follow the official installation guide:
+
+https://docs.astral.sh/uv/getting-started/installation/
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/marcovanzuiden/dreaming-spanish-sync.git
 cd dreaming-spanish-sync
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 uv sync
@@ -48,6 +55,8 @@ Run the application:
 ```bash
 uv run python main.py
 ```
+
+`uv` automatically creates and uses the virtual environment and installs the required dependencies.
 
 Follow the instructions shown in the terminal.
 
