@@ -1,8 +1,10 @@
 from pathlib import Path
 
-CSV_FILE_PATH = "spanish.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-CATEGORY_TO_FILTER = "spanish"
+CSV_FILE_PATH = PROJECT_ROOT / "data" / "spanish.csv"
+
+CATEGORY_TO_FILTER = "Spanisch lernen"
 
 CHROME_USER_DATA_DIR = Path.cwd() / "dreaming_spanish_profile"
 

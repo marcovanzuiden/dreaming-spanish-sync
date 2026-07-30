@@ -47,4 +47,4 @@ def load_activities(
 
     filtered_df = filtered_df.sort_values(by="parsed_date")
 
-    return filtered_df
+    return filtered_df.drop(columns=["parsed_date"])
